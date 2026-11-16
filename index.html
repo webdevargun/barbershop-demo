@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- МЕНЯЙ: название и описание под клиента -->
+<title>Барбершоп «Бритва» в Грозном</title>
+<meta name="description" content="Мужские стрижки и уход за бородой. Цены, адрес, запись по телефону и в Telegram.">
+<style>
+  /* Цвета — меняй здесь, и поменяется весь сайт */
+  :root {
+    --ink: #14213d;
+    --paper: #eef1f2;
+    --red: #c8372d;
+    --blue: #2b5aa6;
+    --chrome: #8f9aa3;
+    --white: #ffffff;
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  h1, h2 {
+    font-family: Rockwell, "Roboto Slab", Georgia, serif;
+    line-height: 1.1;
+    margin: 0;
+  }
+  a:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+
+  /* Главный элемент страницы: полоса как у барбершопа */
+  .hero {
+    display: grid;
+    grid-template-columns: clamp(14px, 3vw, 28px) 1fr;
+    min-height: 80vh;
+  }
+  .pole {
+    background: repeating-linear-gradient(
+      -45deg,
+      var(--red) 0 16px, var(--white) 16px 32px,
+      var(--blue) 32px 48px, var(--white) 48px 64px
+    );
+  }
+  .hero-text {
+    padding: 48px 20px;
+    max-width: 640px;
+    align-self: center;
+  }
+  h1 { font-size: clamp(3rem, 14vw, 6rem); font-weight: 800; }
+  .city { font-size: 1.15rem; margin: 10px 0 18px; color: var(--chrome); font-weight: 600; }
+  .lead { font-size: 1.15rem; max-width: 30em; margin: 0 0 28px; }
+
+  .btn {
+    display: inline-block;
+    padding: 14px 22px;
+    margin: 0 8px 10px 0;
+    font-weight: 700;
+    text-decoration: none;
+    border: 2px solid var(--ink);
+    border-radius: 6px;
+    color: var(--ink);
+  }
+  .btn.main { background: var(--ink); color: var(--white); }
+  .btn:hover { opacity: .85; }
+
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 20px 0; }
+  h2 { font-size: 2rem; margin-bottom: 20px; }
+
+  /* Цены: название, пунктир, цена */
+  .prices { list-style: none; margin: 0; padding: 0; }
+  .prices li {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 9px 0;
+    font-size: 1.1rem;
+  }
+  .prices .dots { flex: 1; border-bottom: 2px dotted var(--chrome); transform: translateY(-4px); }
+  .prices .price { font-weight: 800; white-space: nowrap; }
+  .note { color: #46536b; margin: 14px 0 0; }
+
+  .hours { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 24px; }
+  .hours dt { font-weight: 700; }
+  .hours dd { margin: 0; }
+
+  .works { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .work {
+    aspect-ratio: 1;
+    border-radius: 6px;
+    background: linear-gradient(135deg, var(--ink), #3b4a6b);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 8px;
+    color: #cbd5e1;
+    font-size: .85rem;
+  }
+
+  .contacts p { margin: 0 0 8px; }
+  .contacts a { color: var(--blue); font-weight: 600; }
+
+  footer { margin-top: 64px; padding: 24px 20px; text-align: center; color: #46536b; border-top: 1px solid #c9d0d5; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="pole" aria-hidden="true"></div>
+  <div class="hero-text">
+    <!-- МЕНЯЙ: название барбершопа -->
+    <h1>Бритва</h1>
+    <p class="city">Барбершоп в Грозном</p>
+    <p class="lead">Мужские стрижки и уход за бородой. Запишитесь по телефону или напишите нам в Telegram.</p>
+    <!-- МЕНЯЙ: номер телефона (в href без пробелов) и ник в Telegram -->
+    <a class="btn main" href="tel:+79000000000">Позвонить</a>
+    <a class="btn" href="https://t.me/your_username">Написать в Telegram</a>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section>
+    <h2>Цены</h2>
+    <!-- МЕНЯЙ: услуги и цены -->
+    <ul class="prices">
+Telegram
+Onni
+Do not send me a message; I’ll report and block you for spam
+ОТПРАВИТЬ СООБЩЕНИЕ
+<li><span>Мужская стрижка</span><span class="dots"></span><span class="price">800 ₽</span></li>
+      <li><span>Стрижка машинкой</span><span class="dots"></span><span class="price">500 ₽</span></li>
+      <li><span>Оформление бороды</span><span class="dots"></span><span class="price">500 ₽</span></li>
+      <li><span>Стрижка и борода</span><span class="dots"></span><span class="price">1200 ₽</span></li>
+      <li><span>Детская стрижка (до 12 лет)</span><span class="dots"></span><span class="price">600 ₽</span></li>
+      <li><span>Укладка</span><span class="dots"></span><span class="price">300 ₽</span></li>
+    </ul>
+    <p class="note">Точную стоимость мастер назовёт до начала работы.</p>
+  </section>
+
+  <section style="padding-top:56px">
+    <h2>Работы</h2>
+    <!-- МЕНЯЙ: вместо каждого div вставь свою фотографию, например:
+         <img class="work" src="photo1.jpg" alt="Стрижка и борода" style="object-fit:cover;width:100%"> -->
+    <div class="works">
+      <div class="work">Фото работы</div>
+      <div class="work">Фото работы</div>
+      <div class="work">Фото работы</div>
+    </div>
+  </section>
+
+  <section style="padding-top:56px">
+    <h2>Часы работы</h2>
+    <!-- МЕНЯЙ: график -->
+    <dl class="hours">
+      <dt>Пн–Сб</dt><dd>10:00–21:00</dd>
+      <dt>Вс</dt><dd>11:00–18:00</dd>
+    </dl>
+  </section>
+
+  <section class="contacts" style="padding-top:56px">
+    <h2>Как нас найти</h2>
+    <!-- МЕНЯЙ: адрес, телефон, ссылку на карту (скопируй из Яндекс Карт кнопкой «Поделиться») -->
+    <p>г. Грозный, ул. Примерная, 10</p>
+    <p>Телефон: <a href="tel:+79000000000">+7 900 000-00-00</a></p>
+    <p>Telegram: <a href="https://t.me/your_username">@your_username</a></p>
+    <p><a href="https://yandex.ru/maps/">Открыть на карте</a></p>
+  </section>
+
+</main>
+
+<footer>© 2026 Барбершоп «Бритва»</footer>
+
+</body>
+</html>
